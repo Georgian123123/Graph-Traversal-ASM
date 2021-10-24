@@ -1,0 +1,28 @@
+------------------------------------------------------------------------------------------
+Idee de implementare
+------------------------------------------------------------------------------------------
+Graficul va fi parcurs postordine : dreapta - stanga - radacina, si va fi parcurs recursiv.
+Caut in fiecare nod sa vad ce string are : operator sau operand, daca este operator de orice
+tip : +, -, /, *, parcurg subarborele stang, respectiv drept, si ma voi duce in jos pana la 
+frunze care sunt 100% operanzi. In momentul acela intre rezultatul de pe subarborele stang
+si pe cel drept voi aplica operatia specifica ce se afla in parinte.Rezultatul va fi pus pe
+stiva si retinul in apelul recursiv. Acest algoritm este aplicat pana la root.
+------------------------------------------------------------------------------------------
+Functii :
+- Cele externe pentru realizarea arborelui.
+- Cele create de mine : postorder - Parcurgerea implicita a graficului(contine label-urile
+addish - adaugarea dintre doua numere (copii), subbish(scaderea dintre doua numere), mulish
+(inmultirea), divish(impartirea), addstiv(frunzele sunt puse pe stiva).
+			transformer - Imi transforma un string intr-un int(contine label-uri-
+le repeat(Parcurg string ul byte cu byte si char-ul respectiv il transform in int si il adaug
+la numarul final. Acest label este pt  numere pozitive), repeat2(in principiu face acelasi
+lucru precum repeat, dar pe acesta il apelez pentru numelere ce am depistat ca sunt negative.)
+, done(returnul), done2(imi transforma numarul pozitiv in negativ iar apoi ret).
+-------------------------------------------------------------------------------------------
+Observatii :
+-Am lucrat numai cu registre, nu am declarat nicio variabila globala. Inclusiv root-ul din sche-
+let nu a fost folosit, decat initializat pentru a nu primiii (freeAST() called on a NULL node).
+La finalul functiei getAST in eax se afla adresa la structura unui noi, iar eu am folosit eax.
+-Cod kind of duplicat dar lipsa timpului si multe teme ma forteaza catre brute force coding -sorry.
+--------------------------------------------------------------------------------------------
+
